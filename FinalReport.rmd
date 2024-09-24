@@ -69,3 +69,7 @@ Three tests were performed on the effectiveness of the TriUmp AIDS drug.The p-va
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+To observe whether the AIDS drug triUmp was effective in preventing AIDs in a group of females, we graphed collected data in a barplot, then scripted a numerical summary to show the percentages of the effectiveness of treated females vs untreated females. Lastly, we obtained inferential data by running three tests including Pearsons CHi test, Chi square test, and a fisher test.
+
+After carefully analyzing the data from all out data outputs, we saw that the females that took triUMP vs females that took a placebo drug or were untreated had a higher probability of contracting AIDS compared to females that didn't. The AIDS drug performed the complete opposite of what it was intended to do.
