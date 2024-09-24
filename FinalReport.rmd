@@ -11,10 +11,7 @@ require(tigerstats)
 triUmp <-read.csv(file="triUmpsal.csv",header=TRUE)
 ```
 
-```{r}
-female<- filter(triUmp, gender=="F")
 
-```
 # Introduction
 
 <!--In this section you explain what you are trying to show.  Where did the data come from?  What is the research or other question you are trying to answer?.  If you skimp in this section expect to be marked down in your grade. Paint a picture of the project a couple of paragraphs is expected!-->
@@ -24,7 +21,11 @@ A new  preventative aides drug (triUmpsal) is under test in clinical trials. Con
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
+```{r}
+female<- filter(triUmp, gender=="F")
 
+```
+Infected vs treatment variables using Cat_Cat helper file
 # Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
@@ -45,6 +46,13 @@ After observing the data on the graph we can see. that females that took the AID
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+table1 <- xtabs(~infected + treatment, data=female)
+rowPerc(table1)
+colPerc(table1)
+```
+
+Looking that the numerical summary for females that took the AIDS drug vs females that took a placebo drug, and females that did not take the AIDS drug, we notice that females that that took the AIDS drug and contracted AIDS was 58.82 percent compared to the females that took the placebo drug with 41.18 percent shows how the drug increased the probability for females to contract aids. 
 
 ## Inferential Results
 
